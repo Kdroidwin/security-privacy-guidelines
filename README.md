@@ -26,7 +26,7 @@
 一度にたくさん入れる必要はありません。まずは上から順に整えます。
 アプリや拡張機能は、必ず公式サイトまたは公式ストアから入手してください。
 
-### 1. パスワードマネージャー（最優先）🔒️
+### パスワードマネージャー（最優先）🔒️
 
 例：Bitwarden、Proton Pass、KeePassXCなど。どれか1つを選びます。自己管理できるならKeePassXCを選ぶこと 
 
@@ -38,7 +38,7 @@
 - 重要なパスワードはURLの検出方法を完全一致にする
 - 特別な理由がなければ「ベースドメイン」は避ける。サブドメインにも候補が出る。
 
-### 2. パスキー・多要素認証🔒️
+### パスキー・多要素認証🔒️
 
 例:パスキーならBitwarden(有料プランのみ)、OneKeePass、Proton Passなど
 例:認証アプリ（TOTP）ならEnte AuthやProton Authenticator、Aegisを選ぶ
@@ -50,7 +50,25 @@
 - メールアカウントやパスワードマネージャーなど、重要なアカウントから設定する
 - 復旧コードを端末とは別の安全な場所にオフラインもしくはゼロ知識証明ありのクラウドストレージに保管する
 
-### 3. 広告・トラッカーを抑えるブラウザー拡張機能
+###  ブラウザとコンテンツブロッカー
+
+##### おすすめのブラウザ
+
+セキュリティ重視順に
+- Trivalent(Linux)
+- Brave with SlimBrave-Neo
+- Helium
+- Firefox強化版
+- Mullvad Browser
+
+プライバシー重視順に
+- Tor Browser
+- Mullvad Browser
+- Firefox強化版
+- Helium
+- Brave＋SlimBrave-Neo
+- Trivalent
+
 
 - Firefoxでは、公式配布元から [uBlock Origin](https://github.com/gorhill/ublock) を導入する
 - Chromeでは、ブラウザーが対応している[AdGuard](https://chromewebstore.google.com/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg?hl=ja)か[uBlock Origin Lite](https://github.com/uBlockOrigin/uBOL-home)を選ぶ
@@ -59,21 +77,25 @@
 - ブロッカーはWeb閲覧時の補助策。アプリ内広告や危険なファイルをすべて防げるわけではない
 - 複数のブロッカーを同時に入れない。(ただし[SponserBlock for YouTube](https://sponsor.ajay.app/)はカウントしない)
 
-### 4. OS標準の保護機能と自動更新
+### OS
 
-- OS標準のセキュリティ機能を無効にせず、自動更新を有効にする
-- ブラウザー、アプリ、ルーターも更新する
-- 「高速化」「ウイルス除去」などをうたう、出所不明のソフトを追加で入れない
-- サポートが終了したOSや端末は、更新または買い替えを検討する
+おすすめのOS
+特に理由がないならGrapheneOSを使う。対応していない機種ならiodé0Sを使う。古い端末でサポート切れならLineage0Sを使うか破棄すること。
+- [GrapheneOS](https://grapheneos.org/)🔒️⭐️⭐️ - セキュリティとプライバシーを重視したAndroidベースのOS。アプリごとのネットワーク・センサー・ストレージ・連絡先権限を細かく制御でき、Google Playも通常のアプリと同じサンドボックス内で利用可能。強化されたメモリ保護、自動再起動、Verified Bootやブートローダーの再ロックなどにも対応。
+- [iodéOS](https://iode.tech/iodeos/)⭐️ - LineageOSをベースにした、広告・トラッカー対策重視のAndroid ROM。アプリごとの通信先を監視・遮断できるファイアウォールを搭載し、microGにも対応。Googleサービスへの依存を減らしながら、Pixel、Fairphone、Samsung、Xiaomiなど幅広い端末で利用できる。
+- [LineageOS](https://lineageos.org/) - AndroidをベースにしたオープンソースのカスタムOS。メーカー製アプリなどを減らした軽量でクリーンなAndroidを使え、古い端末にも新しいAndroidやセキュリティアップデートを提供。
+- [CalyxOS](https://calyxos.org/) - プライバシーを重視したAndroidベースのオープンソースOS。オプションのmicroGを利用でき、Google Play依存を減らしつつ普段使いしやすい構成。Verified Bootやブートローダーの再ロックにも対応
 
-### 5. メールエイリアス
+- 自動更新を有効にする
+
+### メールエイリアス
 
 - 登録先ごとに異なるメールアドレスを使いたい場合は、メールエイリアスを利用する
 - 迷惑メールや情報流出の発生元を見分けやすくなる
 - エイリアスの管理サービスにログインできなくなった場合の復旧方法も確認する
 - メールエイリアスは、本人特定や追跡を完全に防ぐものではない
 
-### 6. アプリのトラッカー確認ツール（Android）
+### アプリのトラッカー確認ツール（Android）
 
 例：Exodus Privacy
 
@@ -103,6 +125,7 @@
 - 開発元やアプリの用途を確認し、必要以上の権限を求めていないか確認する
 - 電話やチャットの相手に誘導されて、遠隔操作アプリや画面共有を開始しない
 - 使っていないアプリやソフトは削除する
+- - 「高速化」「ウイルス除去」などをうたう、出所不明のソフトを追加で入れない
 
 ## ログイン・パスワード
 
