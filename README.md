@@ -26,9 +26,9 @@
 一度にたくさん入れる必要はありません。まずは上から順に整えます。
 アプリや拡張機能は、必ず公式サイトまたは公式ストアから入手してください。
 
-### 1. パスワードマネージャー（最優先）
+### 1. パスワードマネージャー（最優先）🔒️
 
-例：Bitwarden、Proton Pass、KeePassXCなど。どれか1つを選びます。
+例：Bitwarden、Proton Pass、KeePassXCなど。どれか1つを選びます。自己管理できるならKeePassXCを選ぶこと 
 
 - サイトごとに異なるランダムなパスワードを作り、保存する
 - マスターパスワードは長く、他のサービスでは使わない
@@ -38,9 +38,9 @@
 - 重要なパスワードはURLの検出方法を完全一致にする
 - 特別な理由がなければ「ベースドメイン」は避ける。サブドメインにも候補が出る。
 
-### 2. パスキー・多要素認証
+### 2. パスキー・多要素認証🔒️
 
-例:パスキーならBitwarden(有料)、OneKeePass、Proton Passなど
+例:パスキーならBitwarden(有料プランのみ)、OneKeePass、Proton Passなど
 例:認証アプリ（TOTP）ならEnte AuthやProton Authenticator、Aegisを選ぶ
 
 - 対応しているサービスでは、まずパスキーの利用を検討する
@@ -52,12 +52,12 @@
 
 ### 3. 広告・トラッカーを抑えるブラウザー拡張機能
 
-- Firefoxでは、公式配布元から uBlock Origin を導入する
-- Chromeでは、ブラウザーが対応しているAdGuardかuBlock Origin Liteを選ぶ
-- uBlock Originが使えるChromiumブラウザであるHeliumを使うことも検討する。
-- 拡張機能の提供元と権限を確認し、似た名前の偽物を入れない
+- Firefoxでは、公式配布元から [uBlock Origin](https://github.com/gorhill/ublock) を導入する
+- Chromeでは、ブラウザーが対応している[AdGuard](https://chromewebstore.google.com/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg?hl=ja)か[uBlock Origin Lite](https://github.com/uBlockOrigin/uBOL-home)を選ぶ
+- uBlock Originが使えるChromiumブラウザである[Helium](https://helium.computer/)を使うことも検討する。
+- 拡張機能の提供元と権限を確認し、似た名前のものを入れない(uBlockなど)
 - ブロッカーはWeb閲覧時の補助策。アプリ内広告や危険なファイルをすべて防げるわけではない
-- 複数のブロッカーを同時に入れない。(ただしSponserBlock for YouTubeはカウントしない)
+- 複数のブロッカーを同時に入れない。(ただし[SponserBlock for YouTube](https://sponsor.ajay.app/)はカウントしない)
 
 ### 4. OS標準の保護機能と自動更新
 
